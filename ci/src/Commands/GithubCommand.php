@@ -57,7 +57,7 @@ class GithubCommand extends Command
             'name' => 'build',
             'on' => [
                 'schedule' => [
-                    ['cron' => '0 0 * * 2'], // every week on Tuesday
+                    ['cron' => '0 0 * * *'], // every week on Tuesday
                 ],
                 'push' => null,
                 'pull_request' => [
